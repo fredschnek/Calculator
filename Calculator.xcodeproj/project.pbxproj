@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F61BE501AD8A38D0069E9D1 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61BE4F1AD8A38D0069E9D1 /* CalculatorBrain.swift */; };
+		7FD234661B385B1700254713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD234651B385B1700254713 /* ViewController.swift */; };
 		7FE94AC41AD7F47C00F9A551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94AC31AD7F47C00F9A551 /* AppDelegate.swift */; };
-		7FE94AC61AD7F47C00F9A551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE94AC51AD7F47C00F9A551 /* ViewController.swift */; };
 		7FE94AC91AD7F47C00F9A551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94AC71AD7F47C00F9A551 /* Main.storyboard */; };
 		7FE94ACB1AD7F47C00F9A551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94ACA1AD7F47C00F9A551 /* Images.xcassets */; };
 		7FE94ACE1AD7F47C00F9A551 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE94ACC1AD7F47C00F9A551 /* LaunchScreen.xib */; };
@@ -26,10 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F61BE4F1AD8A38D0069E9D1 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		7FD234651B385B1700254713 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FE94ABE1AD7F47C00F9A551 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE94AC21AD7F47C00F9A551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FE94AC31AD7F47C00F9A551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FE94AC51AD7F47C00F9A551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FE94AC81AD7F47C00F9A551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FE94ACA1AD7F47C00F9A551 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7FE94ACD1AD7F47C00F9A551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +58,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F3FFA3C1B348F3500611320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F61BE4F1AD8A38D0069E9D1 /* CalculatorBrain.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7F3FFA3D1B348F3D00611320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FE94AC71AD7F47C00F9A551 /* Main.storyboard */,
+				7FE94ACC1AD7F47C00F9A551 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7F3FFA3E1B348F4400611320 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FD234651B385B1700254713 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7F52B2521C2EAE8400F06F1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FE94ACA1AD7F47C00F9A551 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		7FE94AB51AD7F47C00F9A551 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +112,11 @@
 		7FE94AC01AD7F47C00F9A551 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				7FE94AC31AD7F47C00F9A551 /* AppDelegate.swift */,
-				7FE94AC51AD7F47C00F9A551 /* ViewController.swift */,
-				7FE94AC71AD7F47C00F9A551 /* Main.storyboard */,
-				7FE94ACA1AD7F47C00F9A551 /* Images.xcassets */,
-				7FE94ACC1AD7F47C00F9A551 /* LaunchScreen.xib */,
+				7F3FFA3C1B348F3500611320 /* Model */,
+				7F3FFA3D1B348F3D00611320 /* View */,
+				7F3FFA3E1B348F4400611320 /* Controller */,
 				7FE94AC11AD7F47C00F9A551 /* Supporting Files */,
+				7F52B2521C2EAE8400F06F1D /* Resources */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 		7FE94AC11AD7F47C00F9A551 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7FE94AC31AD7F47C00F9A551 /* AppDelegate.swift */,
 				7FE94AC21AD7F47C00F9A551 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -156,7 +191,9 @@
 		7FE94AB61AD7F47C00F9A551 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Frederico Schnekenberg";
 				TargetAttributes = {
 					7FE94ABD1AD7F47C00F9A551 = {
@@ -212,7 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE94AC61AD7F47C00F9A551 /* ViewController.swift in Sources */,
+				7FD234661B385B1700254713 /* ViewController.swift in Sources */,
+				7F61BE501AD8A38D0069E9D1 /* CalculatorBrain.swift in Sources */,
 				7FE94AC41AD7F47C00F9A551 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +314,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -343,7 +382,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.misfitrebels.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,7 +394,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.misfitrebels.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -371,7 +414,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.misfitrebels.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
@@ -386,7 +431,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.misfitrebels.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
@@ -411,6 +458,7 @@
 				7FE94ADF1AD7F47C00F9A551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FE94AE01AD7F47C00F9A551 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +467,7 @@
 				7FE94AE21AD7F47C00F9A551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
